@@ -11,25 +11,28 @@
         <div id="screen" class="screen">
 
         </div>
-        <div class="numbers">
-            <button onclick="number(0)">0</button>
-            <button onclick="number(1)">1</button>
-            <button onclick="number(2)">2</button>
-            <button onclick="number(3)">3</button>
-            <button onclick="number(4)">4</button>
-            <button onclick="number(5)">5</button>
-            <button onclick="number(6)">6</button>
-            <button onclick="number(7)">7</button>
-            <button onclick="number(8)">8</button>
-            <button onclick="number(9)">9</button>
+        <div class="grid-container">
+            <div class="numbers grid-item">
+                <button onclick="number(0)">0</button>
+                <button onclick="number(1)">1</button>
+                <button onclick="number(2)">2</button>
+                <button onclick="number(3)">3</button>
+                <button onclick="number(4)">4</button>
+                <button onclick="number(5)">5</button>
+                <button onclick="number(6)">6</button>
+                <button onclick="number(7)">7</button>
+                <button onclick="number(8)">8</button>
+                <button onclick="number(9)">9</button>
+            </div>
+            <div class="operators grid-item">
+                <button onclick="operator('-')">-</button>
+                <button onclick="operator('+')">+</button>
+                <button onclick="operator('x')">x</button>
+                <button onclick="operator('/')">÷</button>
+                <button onclick="operator('=')">=</button>
+            </div>
         </div>
-        <div class="operators">
-            <button onclick="operator('-')">-</button>
-            <button onclick="operator('+')">+</button>
-            <button onclick="operator('x')">x</button>
-            <button onclick="operator('/')">÷</button>
-            <button onclick="operator('=')">=</button>
-        </div>
+       
     </div>
     <script src="index.js"></script>
 </body>

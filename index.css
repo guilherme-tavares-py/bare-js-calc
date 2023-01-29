@@ -1,5 +1,39 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+.bodycalc {
+    margin: 40px;
+    border: 1px solid black;
+    width: 30%;   
+}
+
 .screen {
     padding: 10px;
     margin: 10px;
     border: 1px solid black;
+}
+
+.grid-container {
+    display: grid;
+    
+}
+
+.grid-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.numbers {
+    display: grid;
+}
+
+.operators {
+    display: grid;
 }
