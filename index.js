@@ -8,7 +8,8 @@ let calculation = {
 }
 
 const number = (value) => {
-    if (display.innerHTML == 'invalid input') {
+ 
+    if (display.innerHTML == 'invalid input' || display.innerHTML == 0) {
         display.innerHTML = null
     }
     display.innerHTML += value
@@ -17,6 +18,7 @@ const number = (value) => {
 const operator = (value) => {
 
     if (display.innerHTML) {
+
         
         if (calculation.firstValue == 0) {
             calculation.firstValue = display.innerHTML
@@ -32,7 +34,9 @@ const operator = (value) => {
 
         display.innerHTML = null
     } else {
+     
         display.innerHTML = 'invalid input'
+        
         calculation.firstValue = 0
         calculation.secondValue = 0
         calculation.operator = ''
@@ -54,6 +58,7 @@ const operator = (value) => {
             case "x":
                 calculation.result = Number(calculation.firstValue) * Number(calculation.secondValue)
                 break
+            
         }
 
         display.innerHTML = calculation.result
